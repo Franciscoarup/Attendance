@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Attendance</title>
+</head>
+
+<body>
+    <table class="attendance-summary-table">
+        <thead>
+            <tr class="attendance-summary-table-head">
+                <th class="summary-table-head-td">Subject Code</th>
+                <th class="summary-table-head-td">Subject Name</th>
+                <th class="summary-table-head-td">Total Class</th>
+                <th class="summary-table-head-td">Class Present</th>
+                <th class="summary-table-head-td">Attendance Percentage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="summaryRow">
+                <td class="summaryRowCourse">CSE101</td>
+                <td class="summaryRowStat">Introduction to Computer Science</td>
+                <td class="summaryRowStat">30</td>
+                <td class="summaryRowStat">23</td>
+                <td class="summaryRowStat">
+                    <canvas id="attendanceChart1" width="50" height="50"></canvas>
+                </td>
+            </tr>
+            <tr class="summaryRow">
+                <td class="summaryRowCourse">MTH102</td>
+                <td class="summaryRowStat">Calculus</td>
+                <td class="summaryRowStat">32</td>
+                <td class="summaryRowStat">30</td>
+                <td class="summaryRowStat">
+                    <canvas id="attendanceChart2" width="50" height="50"></canvas>
+                </td>
+            </tr>
+            <tr class="summaryRow">
+                <td class="summaryRowCourse">PHY103</td>
+                <td class="summaryRowStat">Physics</td>
+                <td class="summaryRowStat">29</td>
+                <td class="summaryRowStat">27</td>
+                <td class="summaryRowStat">
+                    <canvas id="attendanceChart3" width="50" height="50"></canvas>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src="scripts.js" defer></script>
+</html>
